@@ -1,12 +1,12 @@
 {
   "builds": [
-    { "src": "Index.html", "use": "@vercel/static" },
+    { "src": "index.html", "use": "@vercel/static" },
     { "src": "css/**/*", "use": "@vercel/static" },
     { "src": "img/**/*", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/css/(.*)", "dest": "/css/$1" },
     { "src": "/img/(.*)", "dest": "/img/$1" },
-    { "src": "/", "dest": "/Index.html" }
+    { "src": "/", "dest": "/index.html" }
   ]
 }
